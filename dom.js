@@ -92,10 +92,22 @@
 
 var li = document.getElementsByTagName('li');
 console.log(li);
-console.log(li[2]);
-li[2].style.fontWeight = 'Bold';
-li[2].style.backgroundColor = 'green';
+// console.log(li[2]);
+// li[2].style.fontWeight = 'Bold';
+// li[2].style.backgroundColor = 'green';
 
-for(var i=0; i<li.length; i++){
-    li[i].style.fontWeight = 'Bold';
-}
+// for(var i=0; i<li.length; i++){
+//     li[i].style.fontWeight = 'Bold';
+// }
+
+li[4].style.fontWeight = 'Bold';
+li[4].style.backgroundColor = 'grey'
+
+// GETELEMENTSBYCLASSNAME
+var items = document.getElementsByClassName('list-group-item')
+// console.log(items);
+// console.log(items[2]);
+// items[2].textContent = 'Hello 3';
+// items[2].style.fontWeight = 'Bold';
+// items[2].style.backgroundColor = 'green';
+// items[3].textContent = 'Hello 3';
