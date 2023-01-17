@@ -75,21 +75,27 @@
 
 // Query SelectorAll
 
-var titles = document.querySelectorAll('.title');
-console.log(titles);
-titles[0].textContent = 'hello';
+// var titles = document.querySelectorAll('.title');
+// console.log(titles);
+// titles[0].textContent = 'hello';
 
-var odd = document.querySelectorAll('li:nth-child(odd)');
-for(var i=0; i<odd.length; i++){
-    odd[i].style.backgroundColor = 'grey'
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// for(var i=0; i<odd.length; i++){
+//     odd[i].style.backgroundColor = 'grey'
+// }
+
+// var even = document.querySelectorAll('li:nth-child(even)');
+// for(var i=0; i<even.length; i++){
+//     even[i].style.backgroundColor = 'Red';
+// }
+
+
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[2]);
+li[2].style.fontWeight = 'Bold';
+li[2].style.backgroundColor = 'green';
+
+for(var i=0; i<li.length; i++){
+    li[i].style.fontWeight = 'Bold';
 }
-
-var even = document.querySelectorAll('li:nth-child(even)');
-for(var i=0; i<even.length; i++){
-    even[i].style.backgroundColor = 'Red';
-}
-
-
-
-
-
